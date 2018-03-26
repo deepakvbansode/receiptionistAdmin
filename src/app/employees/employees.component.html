@@ -1,0 +1,16 @@
+<div>
+  <employee
+      [data]="employee"
+      [isUpdate]="isUpdate"
+      [clearForm]="clearForm"
+      (onUpdate)="updateEmployee($event);"
+      (onAdd)="addEmployee($event);"
+  >
+    </employee>
+  <employee-list
+      [employees]="employees"
+      (deleteEmployee)="deleteEmployee($event);"
+      (editEmployee)="editEmployee($event);"
+  >
+  </employee-list>
+</div>

@@ -1,0 +1,16 @@
+<div>
+  <form [formGroup]="employeeForm">
+    <mat-form-field>
+        <input matInput placeholder="Enter Name" formControlName="name" >
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Enter Mobile" formControlName="mobile" >
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Enter ext" formControlName="ext" >
+    </mat-form-field>
+    <div>
+        <button matInput mat-raised-button	(click)="save()"> {{submitBtnTitle}}</button>
+    </div>
+  </form>
+</div>
